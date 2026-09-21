@@ -1,0 +1,76 @@
+:root {
+  --text: #566468;
+  --text-h: #162223;
+  --muted: #718083;
+  --bg: #f8faf9;
+  --surface: #ffffff;
+  --border: #e6ebe8;
+  --accent: #00b386;
+  --positive: #00a878;
+  --positive-soft: rgba(0, 168, 120, .14);
+  --negative: #e05252;
+  --sans: 'Avenir Next', 'Gill Sans', sans-serif;
+  --heading: 'Avenir Next', 'Gill Sans', sans-serif;
+  --mono: 'SFMono-Regular', Consolas, monospace;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color-scheme: light;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  min-height: 100svh;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2 {
+  font-family: var(--heading);
+  font-weight: 500;
+  color: var(--text-h);
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 118%;
+  letter-spacing: -0.24px;
+  margin: 0 0 8px;
+
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
+}
+
+p {
+  margin: 0;
+}
+
+code {
+  font-family: var(--mono);
+  display: inline-flex;
+  border-radius: 4px;
+  color: var(--text-h);
+}
+
+code {
+  font-size: 15px;
+  line-height: 135%;
+  padding: 4px 8px;
+  background: var(--surface);
+}
